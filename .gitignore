@@ -1,0 +1,28 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.log
+
+# Virtual environment
+venv/
+env/
+../env/
+
+# Database
+db.sqlite3
+
+# Static and media files
+staticfiles/
+media/
+
+# Environment variables
+.env
+../.env
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db

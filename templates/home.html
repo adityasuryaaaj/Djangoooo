@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+
+{%block title%}Halaman Utama{%endblock%}
+
+{%block content%}
+    <h1>Halo,{{nama}}</h1>
+
+    {% if umur < 18%}
+    <p>Kamu masih dibawah Umur</p>
+    {% elif umur < 30%}
+    <p>Kamu sudah dewasa</p>
+    {%else%}
+    <p>Kamu udah tua nich</p>
+    {%endif%}
+
+    <h3>Daftar Hobiku:</h3>
+    <ul>
+        {% for h in hobi%}
+        <li>{{h}}</li>
+        {%endfor%}
+    </ul>
+{%endblock%}
