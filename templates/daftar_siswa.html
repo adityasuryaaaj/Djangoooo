@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+
+{%block title%}Data Siswa{%endblock%}
+
+{%block content%}
+<h1>Daftar Mahasiswa</h1>
+<ul>
+    {%for s in data %}
+    <li>{{s.nama}}-{{s.jurusan}}-{{s.angkatan}}</li>
+    {% empty %}
+    <li>data belum ditemukan.</h1>
+    {% endfor %}
+    </ul>   
+{%endblock%}
